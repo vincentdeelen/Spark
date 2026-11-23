@@ -1,0 +1,58 @@
+.project-menu {
+  position: relative;
+}
+.project-menu > button {
+  white-space: nowrap;
+}
+.project-menu-list {
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 0;
+  z-index: 30;
+  min-width: 270px;
+  display: flex;
+  flex-direction: column;
+  padding: 6px;
+  background: #fff;
+  border: 1px solid #e8ebf1;
+  border-radius: 9px;
+  box-shadow: 0 8px 24px #33415b1f;
+}
+.project-menu-list button {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2px;
+  border: 0;
+  border-radius: 6px;
+  background: transparent;
+  padding: 8px 10px;
+  color: #424d61;
+  font-size: 12px;
+  font-weight: 700;
+  text-align: left;
+}
+.project-menu-list button:hover,
+.project-menu-list button:focus-visible {
+  background: #f4f2fb;
+  color: #755bd4;
+}
+.project-menu-list button.danger {
+  color: #b4545e;
+}
+.project-menu-list button.danger:hover,
+.project-menu-list button.danger:focus-visible {
+  background: #fbeff0;
+  color: #b4545e;
+}
+.project-menu-list small {
+  color: #99a3b2;
+  font-size: 10px;
+  font-weight: 400;
+}
+.project-menu-list hr {
+  width: 100%;
+  margin: 4px 0;
+  border: 0;
+  border-top: 1px solid #eef0f5;
+}

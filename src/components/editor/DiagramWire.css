@@ -1,0 +1,45 @@
+.wire {
+  fill: none;
+  stroke: #59677c;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  pointer-events: none;
+}
+.wire-hit {
+  fill: none;
+  stroke: transparent;
+  stroke-width: 16;
+  cursor: pointer;
+}
+.selected-wire {
+  stroke: #7559d9;
+  stroke-width: 3;
+}
+.wire-label {
+  fill: #4c5970;
+  font-size: 14px;
+  font-weight: 700;
+  pointer-events: none;
+}
+.junction-dot {
+  fill: #59677c;
+  pointer-events: none;
+}
+.wire-arrow {
+  fill: #59677c;
+  stroke: #59677c;
+  stroke-width: 1;
+  stroke-linejoin: round;
+  pointer-events: none;
+}
+.selected-wire-end .wire-arrow {
+  fill: #7559d9;
+  stroke: #7559d9;
+}
+.wire-end-label {
+  fill: #4c5970;
+  font-size: 11px;
+  font-weight: 700;
+  pointer-events: none;
+}

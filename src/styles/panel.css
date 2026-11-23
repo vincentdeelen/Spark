@@ -1,0 +1,35 @@
+.library-panel,
+.properties-panel {
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+}
+.panel-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  margin-bottom: 23px;
+}
+.eyebrow {
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 1.15px;
+  color: #a7afbe;
+}
+.panel-heading h2,
+.properties-heading h2 {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 18px;
+  letter-spacing: -0.5px;
+  margin: 6px 0 0;
+  color: #242d41;
+}
+.section-label {
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #9da7b7;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

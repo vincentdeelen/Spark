@@ -1,0 +1,159 @@
+.training-dialog {
+  width: min(1200px, 100%);
+  height: min(900px, 95vh);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  background: #fff;
+  border-radius: 12px;
+  padding: 18px;
+  color: #465167;
+  font-size: 12px;
+}
+.training-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  gap: 12px;
+}
+.training-heading h2 {
+  margin: 0;
+  font:
+    700 20px 'Space Grotesk',
+    sans-serif;
+}
+.training-heading p,
+.training-hint {
+  margin: 5px 0;
+  color: #7d899a;
+}
+.training-controls {
+  display: flex;
+  align-items: end;
+  gap: 9px;
+  flex-wrap: wrap;
+}
+.training-controls label {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-weight: 600;
+}
+.training-controls select,
+.training-controls input {
+  height: 30px;
+  max-width: 180px;
+  border: 1px solid #dfe4ec;
+  border-radius: 5px;
+  padding: 3px 6px;
+}
+.training-controls button,
+.training-heading button,
+.training-results button {
+  border: 1px solid #e2e6ee;
+  border-radius: 6px;
+  background: #fff;
+  padding: 7px;
+  color: #65539e;
+  font-size: 11px;
+}
+.training-controls .export-button {
+  background: #7559d9;
+  color: #fff;
+}
+.training-controls button:disabled {
+  opacity: 0.5;
+}
+.training-image-frame {
+  position: relative;
+  flex: 1;
+  min-height: 120px;
+  min-width: 0;
+  display: flex;
+}
+.training-image {
+  flex: 1;
+  min-height: 0;
+  overflow: auto;
+  border: 1px solid #dfe4ec;
+  background: #eee;
+}
+.training-image svg {
+  display: block;
+  max-width: none;
+  cursor: crosshair;
+}
+.training-mark,
+.training-region,
+.training-suggestion {
+  fill: none;
+  stroke: #7559d9;
+  stroke-width: 2;
+  pointer-events: none;
+}
+.training-region {
+  stroke: #d57300;
+  stroke-dasharray: 8 5;
+}
+.training-suggestion {
+  stroke: #e23b70;
+}
+.training-point {
+  fill: #7559d9;
+  pointer-events: none;
+}
+.training-number {
+  font: bold 12px sans-serif;
+  fill: #d02059;
+  pointer-events: none;
+}
+.training-results {
+  max-height: 150px;
+  overflow: auto;
+  display: grid;
+  gap: 4px;
+}
+.training-results > div {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.training-results span {
+  min-width: 190px;
+}
+.training-backdrop {
+  grid-template-columns: minmax(0, 1fr);
+}
+.training-dialog {
+  box-sizing: border-box;
+  min-width: 0;
+  max-width: 100%;
+}
+.training-image {
+  min-width: 0;
+}
+.training-image svg {
+  touch-action: none;
+  user-select: none;
+}
+.training-feedback {
+  height: 36px;
+  flex: none;
+  overflow: auto;
+}
+.training-feedback p {
+  margin: 0;
+}
+.training-word {
+  fill: #7559d9;
+  fill-opacity: 0.08;
+  stroke: #7559d9;
+  stroke-width: 1;
+  stroke-opacity: 0.45;
+  pointer-events: none;
+}
+.training-word.selected {
+  fill-opacity: 0.25;
+  stroke-opacity: 1;
+  stroke-width: 2;
+}

@@ -1,0 +1,63 @@
+.tool-button,
+.zoom-controls button {
+  border: 0;
+  background: transparent;
+  color: #8995a7;
+  display: grid;
+  place-items: center;
+  border-radius: 6px;
+  width: 32px;
+  height: 32px;
+}
+.tool-button:hover,
+.zoom-controls button:hover {
+  background: #f4f2fb;
+  color: #755bd4;
+}
+.tool-button.selected {
+  background: #f0ecfd;
+  color: #7456d7;
+}
+.tool-button:disabled {
+  opacity: 0.35;
+}
+.tool-divider {
+  height: 22px;
+  width: 1px;
+  background: #edf0f4;
+  margin: 0 8px;
+}
+.zoom-controls {
+  position: absolute;
+  right: 27px;
+  bottom: 27px;
+  display: flex;
+  align-items: center;
+  border: 1px solid #edf0f4;
+  border-radius: 7px;
+  background: #fff;
+  padding: 3px;
+  box-shadow: 0 2px 8px #34415b0a;
+}
+.zoom-controls button {
+  width: 27px;
+  height: 27px;
+}
+.zoom-controls span {
+  font-size: 10px;
+  font-weight: 700;
+  color: #718096;
+  min-width: 39px;
+  text-align: center;
+}
+.zoom-controls i {
+  height: 18px;
+  width: 1px;
+  background: #edf0f4;
+  margin: 0 3px;
+}
+@media (max-width: 650px) {
+  .tool-divider {
+    margin: 0 3px;
+  }
+}

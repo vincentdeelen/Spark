@@ -1,0 +1,40 @@
+.diagram-component {
+  color: #354057;
+  cursor: grab;
+}
+.diagram-component:active {
+  cursor: grabbing;
+}
+.diagram-component text {
+  font-family: 'DM Sans', sans-serif;
+  pointer-events: none;
+}
+.component-label {
+  fill: #4c5970;
+  font-size: 11px;
+  font-weight: 700;
+}
+.selection-box {
+  fill: #f4f0ff;
+  fill-opacity: 0.6;
+  stroke: #9a82eb;
+  stroke-width: 1;
+  stroke-dasharray: 4 3;
+}
+.hit-area {
+  fill: transparent;
+  stroke: none;
+}
+.resize-handle {
+  fill: #fff;
+  stroke: #7357dc;
+  stroke-width: 1.5;
+}
+.resize-nw,
+.resize-se {
+  cursor: nwse-resize;
+}
+.resize-ne,
+.resize-sw {
+  cursor: nesw-resize;
+}

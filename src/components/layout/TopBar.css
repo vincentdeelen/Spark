@@ -1,0 +1,133 @@
+.topbar {
+  height: 70px;
+  background: #fff;
+  border-bottom: 1px solid #e8ebf1;
+  display: flex;
+  align-items: center;
+  padding: 0 29px;
+  gap: 25px;
+}
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700;
+  font-size: 19px;
+  letter-spacing: -0.9px;
+  color: #20283d;
+  white-space: nowrap;
+}
+.brand-accent {
+  color: #7558d9;
+}
+.brand-mark {
+  width: 31px;
+  height: 31px;
+  border-radius: 9px;
+  background: #765cdb;
+  color: white;
+  display: grid;
+  place-items: center;
+  font-size: 28px;
+  line-height: 1;
+}
+.brand-mark span {
+  transform: rotate(-40deg);
+  margin-top: -4px;
+}
+.top-divider {
+  height: 29px;
+  width: 1px;
+  background: #e9ebf1;
+}
+.project-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #a6adbb;
+}
+.project-title input {
+  border: 0;
+  outline: 0;
+  width: 125px;
+  color: #424d61;
+  font-weight: 600;
+  font-size: 13px;
+  background: transparent;
+}
+.project-icon {
+  color: #8572d4;
+}
+.top-actions {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+.avatar {
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+  background: #eee9ff;
+  color: #765bd5;
+  display: grid;
+  place-items: center;
+  font-size: 10px;
+  font-weight: 700;
+  border: 2px solid #fff;
+  box-shadow: 0 0 0 1px #e6e1f7;
+}
+.brand-wordmark {
+  position: relative;
+  isolation: isolate;
+  gap: 0;
+}
+.brand-lightning {
+  position: absolute;
+  z-index: -1;
+  left: 50%;
+  top: 50%;
+  width: 35px;
+  height: 40px;
+  transform: translate(-50%, -50%);
+  fill: #d6c9ff;
+}
+.brand-name {
+  color: #20283d;
+}
+@media (max-width: 650px) {
+  .topbar {
+    padding: 0 15px;
+    gap: 12px;
+    height: 60px;
+  }
+  .top-divider,
+  .project-title,
+  .saved,
+  .avatar,
+  .export-extra {
+    display: none;
+  }
+  .top-actions {
+    gap: 8px;
+  }
+}
+.project-menu-toggle {
+  display: grid;
+  place-items: center;
+  width: 24px;
+  height: 24px;
+  margin-left: -6px;
+  padding: 0;
+  border: 0;
+  border-radius: 6px;
+  background: transparent;
+  color: inherit;
+  cursor: pointer;
+}
+.project-menu-toggle:hover,
+.project-menu-toggle[aria-expanded='true'] {
+  background: #f1eefb;
+  color: #755bd4;
+}

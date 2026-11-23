@@ -1,0 +1,249 @@
+.properties-panel {
+  border-left: 1px solid #e8ebf1;
+  padding: 30px 20px 20px;
+}
+.properties-heading {
+  padding-bottom: 23px;
+  border-bottom: 1px solid #eff1f5;
+}
+.properties-content {
+  padding-top: 20px;
+}
+.selected-card {
+  display: flex;
+  gap: 11px;
+  align-items: center;
+}
+.selected-symbol {
+  width: 52px;
+  height: 48px;
+  display: grid;
+  place-items: center;
+  background: #f6f3ff;
+  border-radius: 8px;
+  color: #755bd6;
+}
+.selected-symbol svg {
+  width: 47px;
+}
+.selected-card strong,
+.selected-card span {
+  display: block;
+}
+.selected-card strong {
+  font-size: 12px;
+  color: #465167;
+}
+.selected-card span {
+  font-size: 10px;
+  color: #aab2bf;
+  margin-top: 5px;
+}
+.property-section {
+  border-top: 1px solid #eff1f5;
+  margin-top: 22px;
+  padding-top: 21px;
+}
+.property-section label {
+  display: block;
+  font-size: 10px;
+  font-weight: 600;
+  color: #8490a2;
+  margin-top: 17px;
+}
+.property-section input,
+.property-section select {
+  display: block;
+  margin-top: 7px;
+  width: 100%;
+  height: 36px;
+  padding: 0 10px;
+  border: 1px solid #e9edf3;
+  border-radius: 6px;
+  background: #fcfcfe;
+  color: #566277;
+  font-size: 11px;
+}
+.property-row {
+  display: flex;
+  gap: 9px;
+}
+.property-row label {
+  width: 50%;
+}
+.secondary-button,
+.delete-button {
+  width: 100%;
+  height: 36px;
+  border: 1px solid #e9edf3;
+  background: #fff;
+  border-radius: 6px;
+  color: #6b7688;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-size: 11px;
+  font-weight: 600;
+  margin-top: 18px;
+}
+.secondary-button:hover {
+  border-color: #b8a7ee;
+  color: #7559d9;
+}
+.delete-button {
+  color: #c17d83;
+  margin-top: 8px;
+}
+.delete-button:hover {
+  background: #fff7f7;
+  border-color: #efcbd0;
+}
+.property-help {
+  font-size: 11px;
+  line-height: 1.6;
+  color: #9da7b7;
+}
+.properties-empty {
+  padding: 53px 8px 35px;
+  text-align: center;
+}
+.empty-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 14px;
+  background: #f5f2ff;
+  color: #9d89e4;
+  display: grid;
+  place-items: center;
+  margin: auto;
+}
+.properties-empty h3 {
+  font-size: 12px;
+  color: #596579;
+  margin: 16px 0 7px;
+}
+.properties-empty p {
+  font-size: 11px;
+  line-height: 1.6;
+  color: #abb3c0;
+  margin: 0;
+}
+.shortcuts {
+  border-top: 1px solid #eff1f5;
+  padding-top: 21px;
+  margin-top: auto;
+}
+.shortcuts .section-label {
+  margin-bottom: 16px;
+}
+.shortcuts > div:not(.section-label) {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 10px;
+  color: #9ca6b5;
+  margin-top: 12px;
+}
+kbd {
+  font:
+    600 9px 'DM Sans',
+    sans-serif;
+  color: #9ca6b5;
+  border: 1px solid #edf0f4;
+  background: #fafbfc;
+  border-radius: 4px;
+  padding: 4px 6px;
+}
+.secondary-button:disabled {
+  opacity: 0.45;
+}
+.connection-error {
+  font-size: 11px;
+  line-height: 1.5;
+  color: #b4545e;
+  margin: 12px 0 0;
+}
+@media (max-width: 1100px) {
+  .properties-panel {
+    grid-column: 1/-1;
+    border-left: 0;
+    border-top: 1px solid #e8ebf1;
+  }
+  .properties-empty {
+    padding: 25px 8px;
+  }
+  .shortcuts {
+    margin-top: 24px;
+  }
+}
+.tube-specs table,
+.transformer-specs table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 12px;
+}
+.tube-specs th,
+.tube-specs td,
+.transformer-specs th,
+.transformer-specs td {
+  padding: 6px 0;
+  text-align: left;
+  vertical-align: top;
+  border-bottom: 1px solid #eff1f5;
+}
+.tube-specs th,
+.transformer-specs th {
+  width: 40%;
+  padding-right: 10px;
+  font-weight: 600;
+  color: #4a4f63;
+}
+.pin-input {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.pin-input > span {
+  margin-top: 7px;
+  color: #755bd4;
+  font-weight: 700;
+  font-size: 12px;
+}
+.pin-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0 8px;
+}
+.pin-grid label {
+  margin-top: 10px;
+}
+.pin-grid input {
+  height: 30px;
+  padding: 0 6px;
+}
+.wire-end-fields {
+  margin-top: 18px;
+}
+.wire-end-fields label {
+  margin-top: 10px;
+}
+
+.spec-heading {
+  margin: 14px 0 4px;
+  font-size: 11px;
+  font-weight: 700;
+  color: #8a93a6;
+}
+.spec-notes {
+  margin: 4px 0 8px;
+  padding-left: 16px;
+  font-size: 12px;
+  color: #4a4f63;
+}
+.spec-notes li {
+  margin: 3px 0;
+}
+.transformer-specs a {
+  color: #755bd4;
+}

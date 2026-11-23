@@ -1,0 +1,41 @@
+.import-pages,
+.import-destination {
+  border: 1px solid #e9edf3;
+  border-radius: 7px;
+  margin: 15px 0;
+  padding: 10px;
+}
+.import-pages button {
+  border: 0;
+  background: transparent;
+  color: #7559d9;
+  font-size: 11px;
+  margin-right: 10px;
+}
+.page-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  max-height: 180px;
+  overflow: auto;
+  margin-top: 10px;
+}
+.page-list label,
+.import-explanation label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.import-explanation {
+  background: #f7f5ff;
+  padding: 12px;
+  border-radius: 7px;
+}
+.import-explanation p {
+  margin: 8px 0 0;
+}
+
+.import-destination label {
+  display: block;
+  margin: 4px 0;
+}

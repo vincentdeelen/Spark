@@ -1,0 +1,2 @@
+export const MAX_FILE_BYTES = 30000000
+export const MAX_IMAGE_PIXELS = 50000000

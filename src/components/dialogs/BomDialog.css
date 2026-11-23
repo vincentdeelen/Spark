@@ -1,0 +1,36 @@
+.bom-dialog {
+  width: min(1050px, 100%);
+}
+.bom-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.bom-buttons button {
+  padding: 7px;
+  border: 1px solid #e2e6ee;
+  border-radius: 6px;
+  background: #fff;
+  color: #65539e;
+}
+.bom-dialog select {
+  margin-left: 8px;
+  padding: 5px;
+  border: 1px solid #dfe4ec;
+  border-radius: 5px;
+}
+.bom-editor {
+  display: block;
+  font-weight: 700;
+}
+.bom-editor textarea {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  margin-top: 7px;
+  padding: 8px;
+  border: 1px solid #dfe4ec;
+  border-radius: 6px;
+  font: 12px monospace;
+  resize: vertical;
+}
